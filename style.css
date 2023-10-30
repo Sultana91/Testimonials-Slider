@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap' );
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+	
+}
+
+body{
+    width:100%;
+    height:100vh;
+    font-family:'Popping',sans-serif;
+    background:#24384d;
+}
+.container{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#customer-say{
+    padding-top: 15px;
+    color:white;
+    font-size: 2rem;
+    padding-bottom: .7rem; 
+    letter-spacing: 1px;
+}
+h5{
+    color:white;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+
+}
+.card{
+    background-color:white;
+    width:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding:30px;
+    border-radius: 3px;
+    box-shadow:0px 3px 20px rgba(0,0,0,0.1);
+    position:relative ;
+}
+.photo{
+    height:100px;
+    width:100px;
+    padding-bottom:10px;
+}
+.photo img{
+    background-position: center;
+    background-size: cover;
+}
+#customer-name{
+    padding-bottom:10px;
+}
+.review{
+    padding-bottom: 10px;
+}
+.star{
+    color:orange;
+    font-size:.8rem;
+}
+.prevBtn, .nextBtn{
+    color:red;
+    font-size:1.8rem;
+    width: 45px;
+    height:45px;
+    max-height: 45px;
+    max-width: 45px;
+    line-height:45px;
+    border-radius: 50%;
+    text-align:center;
+    transition: all 0.3s ease;
+}
+.prevBtn{
+    position:absolute;
+    top:10%;
+    right:14%;
+}
+.nextBtn{
+    position:absolute;
+    top:10%;
+    right:6%;
+}
+.btn:hover{
+    background-color: red;
+    color:white
+}
+@media  only screen and (max-width:624px) {
+    .card{
+        width:90%;
+        padding-bottom:20px;
+    }
+    .prevBtn{
+        position:absolute;
+        top:10%;
+        right:16%;
+    }
+    
+}
